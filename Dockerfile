@@ -2,7 +2,7 @@ FROM node:carbon-alpine
 
 MAINTAINER Igor Ilic
 
-RUN apk update && apk add bash python g++ make && rm -rm /var/cache/apk/*
+RUN apk update && apk add bash python g++ make && rm -r /var/cache/apk/*
 
 ENV NGINX_VERSION 1.13.8
 
